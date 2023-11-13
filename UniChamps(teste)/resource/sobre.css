@@ -1,0 +1,70 @@
+body {
+    height: 200vh; /* Tamanho grande para permitir rolagem */
+    margin: 0;
+    overflow: hidden;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    margin: 10px;
+    transition: transform 0.5s ease; /* Transição suave */
+}
+
+.image1 {
+    background-image: url("/resource/finanças-pessoais.png");
+}
+
+.image2 {
+    background-image: url('/resource/finanças-pessoais.png');
+}
+
+.image3 {
+    background-image: url('/resource/Bolinhas.png');
+}
+
+.image4 {
+    background-image: url('renda-passiva.png');
+}
+
+/* Aplicar a animação quando o scroll ocorre */
+body::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    animation: scrollAnimation 1s linear infinite;
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Ajustar a posição inicial das imagens quando o scroll ocorre */
+body.scroll::before {
+    content: "";
+    display: block;
+    height: 100vh;
+    margin-top: -100vh;
+}
