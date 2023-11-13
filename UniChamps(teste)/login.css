@@ -1,0 +1,76 @@
+
+nav ul li a:hover{
+    background-color: #F0E68C;
+    border-radius: 5px;
+    border: 3px;
+}
+.col-3{
+    margin-right: 10px;
+}
+
+input, label{
+    margin:10px;
+}
+
+.bg-dark-custom {
+    background-color: #202020;
+}
+.custom-link {
+    text-decoration: none;
+    color: yellow;
+    cursor: pointer;
+}
+.text-e8d153 {
+    color: #E8D153;
+}
+
+.col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+    
+}
+.btn-primary {
+    color: #202020;
+    background-color: #202020;
+    border-color: #202020;
+}
+.gradient-custom-2 {
+    
+    background: #202020;
+    background: linear-gradient(to right, #fff, #E8D153, #E8D153);
+    }
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+    }
+
+    img .geometricos {
+        width: 10%;
+        animation: float 1.5s infinite ease-in-out ;
+    }
+
+    @keyframes geometrico {
+        0%, 100% {
+            transform: translateY(0)
+        }
+         
+        50%{
+            transform: translateY(-50px);
+        }
+    }
+
+    .rounded {
+        border-radius: 0.25rem!important;
+        width: 600px;
+        float: right;
+    }
+
+    
